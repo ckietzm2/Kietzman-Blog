@@ -2,12 +2,12 @@
 {{#each comments as |comment| }}
 <div class="row mb-4 comment">
   <div class="col-md-5">
-    <h2>
-
-      <a href="/project/{{comment.id}}">{{comment.name}}</a>
-    </h2>
     
-    <p>Created by {{comment.name}} on {{format_date comment.date_created}}</p>
+
+         <h4>{{comment.name}}</h4>
+ 
+    
+    <p>Created by {{user.name}} on {{format_date comment.date_created}}</p>
   </div>
   <div class="col-md-7">
     <p>

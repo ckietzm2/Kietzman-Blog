@@ -27,7 +27,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/comment/:id', async (req, res) => {
+router.get('/comments', async (req, res) => {
   try {
     const commentData = await Comment.findByPk(req.params.id, {
       include: [
@@ -40,7 +40,7 @@ router.get('/comment/:id', async (req, res) => {
 
     const comment = commentData.get({ plain: true });
 
-    res.render('comment', {
+    res.render('comments', {
       ...comment,
       logged_in: req.session.logged_in
     });

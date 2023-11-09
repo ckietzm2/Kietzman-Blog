@@ -1,5 +1,6 @@
 header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
+  background-color: cyan;
 }
 
 .no-button {
@@ -17,3 +18,6 @@ header, .project:not(:last-child) {
   text-decoration: underline;
 }
 
+body, main {
+  background-color: khaki;
+}
